@@ -12,7 +12,7 @@ import { DpDatePickerModule } from 'ng2-date-picker';
 export class HomeComponent {
 
 datePickerConfig = {
-  format: 'YYY-MM-DD'
+  format: 'YYYY-MM-DD'
 };
 
 
