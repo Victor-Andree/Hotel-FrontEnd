@@ -2,11 +2,18 @@
 
     <div class="container">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
             <!--logo-->
             <a class="navbar-brand" href="">
                 <img src="assets/images/logo.png" alt="logo" width="120" height="120">
             </a>
+            <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
             <!--menu-->
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
@@ -26,8 +33,25 @@
                         </a>
                     </li>
                 </ul>
-                <!--search form-->
-            <div class="others-option">
+                <ul class="navbar-nav for-responsive">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Reserva
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+                <!-- search form-->
+                <div class="others-option">
                     <form class="search-box" action="">
                         <input type="text" name="Buscar" placeholder="Buscar" class="form-control">
                         <button type="submit" class="search-btn">
@@ -37,9 +61,8 @@
 
                 </div>
             </div>
-        
-        </nav>
 
+        </nav>
 
     </div>
 </div>
