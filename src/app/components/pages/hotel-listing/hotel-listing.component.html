@@ -2,21 +2,52 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-12">
-             <div class="left-side-bar">
-                <h3>Buscar aqui</h3>
-                <form action="">
-                   <input type="text" class= "" placeholder="Buscar"> 
-                   <button type="submit" class="">
-                    <i class=""></i>
-                   </button>
-                </form>
-             </div>
+                <div class="left-side-bar">
+                    <h3>Buscar aqui</h3>
+                    <div class="sigle-widget">
+                        <form action="">
+                            <input type="text" class="form-control" placeholder="Buscar">
+                            <button type="submit" class="src-btn">
+                                <i class="ri-search-line move-icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="single-widget">
+                        <h3>Precio</h3>
+                        <select class="">
+                            <option select>$100</option>
+                            <option value="1">$200</option>
+                            <option value="2">$300</option>
+                            <option value="3">$400</option>
+                            <option value="4">$500</option>
+
+
+                        </select>
+
+                    </div>
+
+                </div>
 
 
             </div>
             <div class="col-lg-9 col-md-12">
-                <!--hotel listing  -->
-                <div>hotels list </div>
+                <div class="hotels-listing">
+                    <ul class="d-flex justify-content-between sorting">
+                        <li>
+                            <span>30 hoteles</span>
+                        </li>
+                        <li>
+                            <select class="">
+                                <option selected>Ordenado por defecto</option>
+                                <option value="1">Mayor a menor precio</option>
+                                <option value="2">Menor a mayor precio</option>
+                            </select>
+                        </li>
+                    </ul>
+
+
+                </div>
+
 
             </div>
         </div>
